@@ -15,17 +15,18 @@ public class DariaHorlachServlet extends HttpServlet {
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>Daria Horlach</h1>");
+        out.println("<html><body style=\"line-height: 150%\">");
+        out.println("<h1>Daria Purr-lach</h1>");
         out.println("<img src=\"images/horlach.jpg\" alt=\"Horlach image\" width=\"600\" height=\"600\">");
         out.println("<br/>");
+        out.println("<p>Human name: Daria Horlach</p>");
         out.println("<p>Age: 17</p>");
         out.println("<p>Hobby: drawing</p>");
         out.println("<p>Sport: fitness</p>");
         out.println("<p>Favorite movie:</p>");
         out.println("<a href=\"https://fmoviesz.to/tv/gossip-girl-mj56v/1-1\">Gossip Girl</a>");
         out.println("<br/><br/>");
-        out.println("<a href=\"javascript:history.back()\">Back</a>");
+        out.println("<button style=\"display:block\" onclick=\"history.back()\">Back</button>");
         out.println("</body></html>");
     }
 }

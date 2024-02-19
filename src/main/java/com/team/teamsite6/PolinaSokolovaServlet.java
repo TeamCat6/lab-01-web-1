@@ -15,17 +15,18 @@ public class PolinaSokolovaServlet extends HttpServlet {
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>Polina Sokolova</h1>");
+        out.println("<html><body style=\"line-height: 150%\">");
+        out.println("<h1>Polina Purr-kolova</h1>");
         out.println("<img src=\"images/sokolova.jpg\" alt=\"Sokolova image\" width=\"600\" height=\"600\">");
         out.println("<br/>");
+        out.println("<p>Human name: Polina Sokolova</p>");
         out.println("<p>Age: 17</p>");
         out.println("<p>Hobby: baking</p>");
         out.println("<p>Sport: cycling</p>");
         out.println("<p>Favorite movie:</p>");
         out.println("<a href=\"https://fmoviesz.to/movie/frozen-0133/1-1\">Frozen</a>");
         out.println("<br/><br/>");
-        out.println("<a href=\"javascript:history.back()\">Back</a>");
+        out.println("<button style=\"display:block\" onclick=\"history.back()\">Back</button>");
         out.println("</body></html>");
     }
 }

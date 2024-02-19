@@ -15,17 +15,18 @@ public class MariyaMakasyeyevaServlet extends HttpServlet {
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>Mariya Makasyeyeva</h1>");
+        out.println("<html><body style=\"line-height: 150%\">");
+        out.println("<h1>Mariya Mew-kasyeyeva</h1>");
         out.println("<img src=\"images/makasyeyeva.jpg\" alt=\"Makasyeyeva image\" width=\"600\" height=\"600\">");
         out.println("<br/>");
+        out.println("<p>Human name: Mariya Makasyeyeva</p>");
         out.println("<p>Age: 21</p>");
         out.println("<p>Hobby: cooking, reading</p>");
         out.println("<p>Sport: dancing, horse riding</p>");
         out.println("<p>Favorite movie:</p>");
         out.println("<a href=\"https://fmoviesz.to/movie/harry-potter-and-the-order-of-the-phoenix-ojj4/1-1\">Harry Potter and the Order of the Phoenix</a>");
         out.println("<br/><br/>");
-        out.println("<a href=\"javascript:history.back()\">Back</a>");
+        out.println("<button style=\"display:block\" onclick=\"history.back()\">Back</button>");
         out.println("</body></html>");
     }
 }
