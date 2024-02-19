@@ -5,6 +5,9 @@ import java.io.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+/**
+ * @author Makasyeyeva
+ **/
 @WebServlet(name = "TeamServlet", value = "/team")
 public class TeamServlet extends HttpServlet {
 
@@ -16,7 +19,6 @@ public class TeamServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
-//request.getRequestDispatcher()
         PrintWriter out = response.getWriter();
         out.println("<html><body style=\"line-height: 150%\">");
         out.println("<h1>" + message + "</h1>");

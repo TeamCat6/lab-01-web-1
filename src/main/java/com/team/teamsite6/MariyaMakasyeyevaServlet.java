@@ -8,6 +8,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * @author Makasyeyeva
+ * **/
+
 @WebServlet(name = "MariyaMakasyeyevaServlet", value = "/mariya_makasyeyeva")
 public class MariyaMakasyeyevaServlet extends HttpServlet {
 
